@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <img 
-              src="https://drive.google.com/file/d/1pIOAannnDuEI3nlJ79VwexaViAokc93b/view?usp=sharing" 
+              src="./images/logoWBG.JPG" 
               alt="Jayantak Logo" 
               className="h-12 w-12 object-contain"
             />
