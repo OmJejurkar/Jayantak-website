@@ -10,7 +10,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <img 
-              src="./images/logo.jpg" 
+              src="https://www.google.com/imgres?q=Jayantak%20Media%20solutions%20pune%20logo&imgurl=https%3A%2F%2Flookaside.fbsbx.com%2Flookaside%2Fcrawler%2Fmedia%2F%3Fmedia_id%3D100054621151919&imgrefurl=https%3A%2F%2Fwww.facebook.com%2FCCTVMEDIA.IN%2F&docid=-z2is5572vQcAM&tbnid=OWOqy-_xSkg3EM&vet=12ahUKEwiOp-Kc3f-KAxUlEVkFHQXAHiAQM3oECBcQAA..i&w=1932&h=2048&hcb=2&ved=2ahUKEwiOp-Kc3f-KAxUlEVkFHQXAHiAQM3oECBcQAA" 
               alt="Jayantak Logo" 
               className="h-12 w-12 object-contain"
             />
