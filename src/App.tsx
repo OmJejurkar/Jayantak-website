@@ -2,7 +2,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Services from './components/Services';
 import About from './components/About';
-import Portfolio from './components/Portfolio';
+import Project from './components/Project';
 import Blog from './components/Blog';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -14,7 +14,7 @@ function App() {
       <Hero />
       <Services />
       <About />
-      <Portfolio />
+      <Project />
       <Blog />
       <Contact />
       <Footer />
