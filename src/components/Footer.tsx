@@ -1,5 +1,5 @@
 import React from 'react';
-import { Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, Youtube } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -11,20 +11,21 @@ const Footer = () => {
               Jayantak
             </h3>
             <p className="text-gray-400 mb-6">
-              Transforming visions into reality through expert political campaign management,
-              photography, and event management services.
+            Jayantak Media Solution Private Limited is a full-service digital marketing and event management company dedicated to helping organizations achieve their goals through customized, results-driven solutions.
+
+
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-orange-500">
+              <a href="https://www.facebook.com/CCTVMEDIA.IN" className="text-gray-400 hover:text-orange-500">
                 <Facebook size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-orange-500">
-                <Twitter size={20} />
-              </a>
-              <a href="#" className="text-gray-400 hover:text-orange-500">
+              <a href="https://www.instagram.com/jayantakmedia?igsh=Y3NiNjQydDRrY3Nr" className="text-gray-400 hover:text-orange-500">
                 <Instagram size={20} />
               </a>
-              <a href="#" className="text-gray-400 hover:text-orange-500">
+              <a href="https://youtube.com/@jayantakmedia?si=UmF7DWWAcV8YXLyX" className="text-gray-400 hover:text-orange-500">
+                <Youtube size={20} />
+              </a>
+              <a href="https://www.linkedin.com/company/jayantak-media-solutions-private-limited/" className="text-gray-400 hover:text-orange-500">
                 <Linkedin size={20} />
               </a>
             </div>
@@ -54,7 +55,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Jayantak. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Jayantak Media. All rights reserved.</p>
         </div>
       </div>
     </footer>

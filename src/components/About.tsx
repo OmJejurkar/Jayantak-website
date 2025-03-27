@@ -27,7 +27,7 @@ const About = () => {
             <div className="grid grid-cols-3 gap-4 mb-8">
               <div className="text-center">
                 <Award className="w-8 h-8 text-orange-500 mx-auto mb-2" />
-                <h4 className="font-bold text-xl">150+</h4>
+                <h4 className="font-bold text-xl">20+</h4>
                 <p className="text-gray-600">Projects</p>
               </div>
               <div className="text-center">
@@ -38,7 +38,7 @@ const About = () => {
               <div className="text-center">
                 <ThumbsUp className="w-8 h-8 text-orange-500 mx-auto mb-2" />
                 <h4 className="font-bold text-xl">98%</h4>
-                <p className="text-gray-600">Success Rate</p>
+                <p className="text-gray-600">Positive Rating</p>
               </div>
             </div>
 

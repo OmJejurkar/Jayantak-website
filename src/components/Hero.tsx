@@ -10,8 +10,11 @@ const Hero = () => {
       <div className="max-w-auto mx-auto px-4 sm:px-6 lg:px-8 py-32">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
+            <h1 className="text-2xl text-white">Expect The Unexpected</h1>
+            <br />
             <h1 className="text-5xl font-bold mb-6">
-              Transforming Digital Campaigns
+              <span className="block">Transforming Digital</span>
+              <span className="block">Experiences</span>
             </h1>
             <p className="text-xl mb-8 text-gray-300">
               Engage, Influence,Inspire
@@ -30,19 +33,7 @@ const Hero = () => {
                 Our Services
               </a>
             </div>
-          </div>
-          <div className="relative">
-            <img
-              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
-              alt="Political Campaign"
-              className="rounded-lg shadow-2xl"
-            />
-            <div className="absolute -bottom-4 -right-4 bg-orange-500 p-4 rounded-lg">
-              <p className="text-2xl font-bold">15+</p>
-              <p className="text-sm">Years Experience</p>
-            </div>
-          </div>
-          <p className="text-gray-300 text-center mt-8">
+            <p className="text-gray-300 text-center mt-8">
             Creating a brand is just the beginning; sustaining and growing it
             requires continuous consultation and strategic innovation. In
             today's dynamic market, expanding horizons and adapting to
@@ -53,6 +44,19 @@ const Hero = () => {
             campaigns, build resilient brands, and ensure your business stays
             ahead of the curve.
           </p>
+          </div>
+          <div className="relative">
+            <img
+              src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=800&q=80"
+              alt="Political Campaign"
+              className="rounded-lg shadow-2xl"
+            />
+            <div className="absolute -bottom-4 -right-4 bg-orange-500 p-4 rounded-lg">
+              <p className="text-2xl font-bold">6+</p>
+              <p className="text-sm">Years Experience</p>
+            </div>
+          </div>
+         
         </div>
       </div>
     </div>

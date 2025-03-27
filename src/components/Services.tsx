@@ -15,40 +15,40 @@ const services = [
     icon: <Megaphone className="w-8 h-8 text-orange-500" />,
     title: "Political Campaign Management",
     description:
-      "Strategic planning and execution of political campaigns with proven success rates.",
+      "We specialize in planning and executing strategic political campaigns that maximize voter engagement and success rates",
   },
   {
     icon: <Camera className="w-8 h-8 text-orange-500" />,
     title: "Photography",
     description:
-      "Professional photography services for events, portraits, and commercial purposes.",
+      "Photography Our professional photography services ensure high-quality visuals for personal, corporate, and commercial needs.",
   },
   {
     icon: <Calendar className="w-8 h-8 text-orange-500" />,
     title: "Event Planning",
     description:
-      "Comprehensive event planning services for corporate and private events.",
+      "We provide end-to-end event planning services to make your corporate and private events a success.",
   },
   {
     icon: <Globe className="w-8 h-8 text-purple-500" />,
     title: "Digital Marketing",
     description:
-      "Comprehensive digital marketing strategies to boost your online presence.",
+      "Our result-driven digital marketing strategies enhance online visibility and customer engagement.",
   },
   {
     icon: <Briefcase className="w-8 h-8 text-purple-500" />,
     title: "Brand Consulting",
-    description: "Expert guidance to build and strengthen your brand identity.",
+    description: "We offer expert consulting to help businesses craft strong and memorable for your brand identities.",
   },
   {
     icon: <PenTool className="w-8 h-8 text-purple-500" />,
     title: "Content Writing",
-    description: "Engaging content creation for all your communication needs.",
+    description: "We create compelling content tailored for websites, marketing campaigns, and brand storytelling.",
   },
   {
     icon: <Share2 className="w-8 h-8 text-purple-500" />,
     title: "Social Media Handling",
-    description: "Professional management of your social media presence.",
+    description: "Our social media specialists help brands create, manage, and grow their presence across platforms",
   },
 ];
 const Why = [
@@ -56,7 +56,7 @@ const Why = [
     icon: <Megaphone className="w-8 h-8 text-orange-500" />,
     title: "Holistic Approach",
     description:
-      "Comprehensive services to cover all your branding and marketing needs.",
+      "We create user-friendly, high-performing websites and e-commerce platforms that drive engagement and conversions.",
   },
   {
     icon: <Camera className="w-8 h-8 text-orange-500" />,
