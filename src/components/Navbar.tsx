@@ -1,5 +1,6 @@
 import React from 'react';
 import { Menu, X, } from 'lucide-react';
+import logoWBG from './images/logoWBG.jpg';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <img 
-              src="https://raw.githubusercontent.com/OmJejurkar/Jayantak-website/main/src/images/logoWBG.JPG" 
+              src={logoWBG} 
               alt="Jayantak Logo" 
               className="h-12 w-12 object-contain"
             />

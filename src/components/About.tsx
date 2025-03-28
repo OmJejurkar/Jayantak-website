@@ -1,7 +1,7 @@
 import React from "react";
 import { Award, Users, ThumbsUp } from "lucide-react";
-import pravinImage from "./images/pravin.jpg";
-import aniketImage from "./images/aniket.jpg";
+import pravinImage from "./images/Pravin.jpg";
+import aniketImage from "./images/aniket.png";
 
 const About = () => {
   return (
@@ -66,11 +66,12 @@ const About = () => {
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 px-4 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="h-[300px] w-full mb-6">
+             {/* Image container with fixed aspect ratio */}
+             <div className="w-full mb-6">
                 <img
                   src={pravinImage}
-                  alt="Pravin Shinde"
-                  className="w-full h-full object-cover rounded-lg"
+                  alt="Aniket Mhaske"
+                  className="w-full h-auto object-top rounded-lg"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2">Pravin Shinde</h3>
@@ -89,13 +90,15 @@ const About = () => {
 
           <div className="w-full md:w-1/2 px-4 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="h-[300px] w-full mb-6">
+              {/* Image container with fixed aspect ratio */}
+              <div className="w-full mb-6">
                 <img
                   src={aniketImage}
                   alt="Aniket Mhaske"
-                  className="w-full h-full object-cover rounded-lg"
+                  className="w-full h-auto object-top rounded-lg"
                 />
               </div>
+
               <h3 className="text-2xl font-bold mb-2">Aniket Mhaske</h3>
               <p className="text-orange-500 mb-4">Founder</p>
               <p className="text-gray-600">

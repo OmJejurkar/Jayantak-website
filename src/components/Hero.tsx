@@ -16,9 +16,6 @@ const Hero = () => {
               <span className="block">Transforming Digital</span>
               <span className="block">Experiences</span>
             </h1>
-            <p className="text-xl mb-8 text-gray-300">
-              Engage, Influence,Inspire
-            </p>
             <div className="flex gap-4">
               <a
                 href="#contact"
@@ -34,16 +31,16 @@ const Hero = () => {
               </a>
             </div>
             <p className="text-gray-300 text-center mt-8">
-            Creating a brand is just the beginning; sustaining and growing it
-            requires continuous consultation and strategic innovation. In
-            today's dynamic market, expanding horizons and adapting to
-            ever-changing scenarios are essential for long-term success. At
-            Jayantak Media Solutions, we understand that innovation and
-            development must go hand in hand with strategic approaches to tackle
-            the evolving market landscape. Together, we create impactful
-            campaigns, build resilient brands, and ensure your business stays
-            ahead of the curve.
-          </p>
+              Creating a brand is just the beginning; sustaining and growing it
+              requires continuous consultation and strategic innovation. In
+              today's dynamic market, expanding horizons and adapting to
+              ever-changing scenarios are essential for long-term success. At
+              Jayantak Media Solutions, we understand that innovation and
+              development must go hand in hand with strategic approaches to
+              tackle the evolving market landscape. Together, we create
+              impactful campaigns, build resilient brands, and ensure your
+              business stays ahead of the curve.
+            </p>
           </div>
           <div className="relative">
             <img
@@ -56,7 +53,6 @@ const Hero = () => {
               <p className="text-sm">Years Experience</p>
             </div>
           </div>
-         
         </div>
       </div>
     </div>
