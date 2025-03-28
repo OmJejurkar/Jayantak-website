@@ -8,6 +8,7 @@ import ProjectComponent from './components/Project';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Project from './components/Pages/Project';  // Assuming Project is in pages folder
+import ServicesList from './components/Pages/ServicesList'; // Import the ServicesList component
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
             } 
           />
           <Route path="/projects" element={<Project />} />
+          <Route path="/services-list" element={<ServicesList />} /> {/* Route for the ServicesList page */}
         </Routes>
         <Footer />
       </div>
