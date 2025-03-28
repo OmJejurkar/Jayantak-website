@@ -1,5 +1,7 @@
 import React from "react";
 import { Award, Users, ThumbsUp } from "lucide-react";
+import pravinImage from "./images/pravin.jpg";
+import aniketImage from "./images/aniket.jpg";
 
 const About = () => {
   return (
@@ -54,7 +56,7 @@ const About = () => {
       <div className="text-center mb-12 mt-12">
         <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Meet the visionaries behind Jayantak Media Tech Solutions who are
+          Meet the visionaries behind Jayantak Media solutions PVT LMT. who are
           driving innovation and excellence in political campaign management and
           digital solutions.
         </p>
@@ -64,11 +66,11 @@ const About = () => {
         <div className="flex flex-wrap -mx-4">
           <div className="w-full md:w-1/2 px-4 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <div className="h-64 overflow-hidden rounded-lg mb-4">
+              <div className="h-[300px] w-full mb-6">
                 <img
-                  src="https://raw.githubusercontent.com/OmJejurkar/Jayantak-website/main/src/images/pravin.jpg"
+                  src={pravinImage}
                   alt="Pravin Shinde"
-                  className="w-full h-64 object-cover mb-4 rounded-lg"
+                  className="w-full h-full object-cover rounded-lg"
                 />
               </div>
               <h3 className="text-2xl font-bold mb-2">Pravin Shinde</h3>
@@ -87,11 +89,13 @@ const About = () => {
 
           <div className="w-full md:w-1/2 px-4 mb-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
-              <img
-                src="https://raw.githubusercontent.com/OmJejurkar/Jayantak-website/main/src/images/aniket.jpg"
-                alt="Aniket Mhaske"
-                className="w-full h-64 object-cover mb-4 rounded-lg"
-              />
+              <div className="h-[300px] w-full mb-6">
+                <img
+                  src={aniketImage}
+                  alt="Aniket Mhaske"
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
               <h3 className="text-2xl font-bold mb-2">Aniket Mhaske</h3>
               <p className="text-orange-500 mb-4">Founder</p>
               <p className="text-gray-600">

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
   const handleSubmit = (e: React.FormEvent) => {
@@ -58,13 +58,6 @@ const Contact = () => {
               <h3 className="text-xl font-semibold mb-4">Contact Information</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <Phone className="w-5 h-5 text-purple-600 mt-1 mr-3" />
-                  <div>
-                    <p className="font-medium">Phone</p>
-                    <p className="text-gray-600">77580 26807, 73506 24982</p>
-                  </div>
-                </div>
-                <div className="flex items-start">
                   <Mail className="w-5 h-5 text-purple-600 mt-1 mr-3" />
                   <div>
                     <p className="font-medium">Email</p>
@@ -78,15 +71,6 @@ const Contact = () => {
                     <p className="text-gray-600">Pune<br />India</p>
                   </div>
                 </div>
-              </div>
-            </div>
-
-            <div>
-              <h3 className="text-xl font-semibold mb-4">Office Hours</h3>
-              <div className="space-y-2 text-gray-600">
-                <p>Monday - Friday: 9:00 AM - 6:00 PM</p>
-                <p>Saturday: 10:00 AM - 4:00 PM</p>
-                <p>Sunday: Closed</p>
               </div>
             </div>
           </div>

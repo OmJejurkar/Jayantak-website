@@ -38,18 +38,18 @@ const Footer = () => {
               <li><a href="#about" className="text-gray-400 hover:text-orange-500">About</a></li>
               <li><a href="#services" className="text-gray-400 hover:text-orange-500">Services</a></li>
               <li><a href="#portfolio" className="text-gray-400 hover:text-orange-500">Portfolio</a></li>
-              <li><a href="#blog" className="text-gray-400 hover:text-orange-500">Blog</a></li>
+              {/* <li><a href="#blog" className="text-gray-400 hover:text-orange-500">Blog</a></li> */}
             </ul>
           </div>
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-400 hover:text-orange-500">Political Campaigns</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-orange-500">Photography</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-orange-500">Event Management</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-orange-500">Digital Marketing</a></li>
-              <li><a href="#" className="text-gray-400 hover:text-orange-500">Brand Consulting</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-orange-500">Political Campaigns</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-orange-500">Photography</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-orange-500">Event Management</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-orange-500">Digital Marketing</a></li>
+              <li><a href="#services" className="text-gray-400 hover:text-orange-500">Brand Consulting</a></li>
             </ul>
           </div>
         </div>

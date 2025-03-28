@@ -1,5 +1,5 @@
 import React from 'react';
-import { Menu, X, Calendar, Megaphone } from 'lucide-react';
+import { Menu, X, } from 'lucide-react';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -15,7 +15,7 @@ const Navbar = () => {
               className="h-12 w-12 object-contain"
             />
             <span className="text-2l font-bold bg-gradient-to-r from-orange-500 to-purple-600 bg-clip-text text-transparent">
-              Jayantak Media Silutions Pvt. Ltd.
+              Jayantak Media Solutions Pvt. Ltd.
             </span>
           </div>
           
@@ -24,8 +24,9 @@ const Navbar = () => {
               <a href="#home" className="hover:text-orange-500 px-3 py-2">Home</a>
               <a href="#about" className="hover:text-orange-500 px-3 py-2">About</a>
               <a href="#services" className="hover:text-orange-500 px-3 py-2">Services</a>
-              <a href="#portfolio" className="hover:text-orange-500 px-3 py-2">Portfolio</a>
-              <a href="#blog" className="hover:text-orange-500 px-3 py-2">Blog</a>
+              <a href="#portfolio" className="hover:text-orange-500 px-3 py-2">Projects</a>
+              {/* Currently not in use  */}
+              {/* <a href="#blog" className="hover:text-orange-500 px-3 py-2">Blog</a> */}
               <a href="#contact" className="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-md">Contact</a>
             </div>
           </div>
@@ -45,7 +46,8 @@ const Navbar = () => {
             <a href="#about" className="block hover:text-orange-500 px-3 py-2">About</a>
             <a href="#services" className="block hover:text-orange-500 px-3 py-2">Services</a>
             <a href="#portfolio" className="block hover:text-orange-500 px-3 py-2">Portfolio</a>
-            <a href="#blog" className="block hover:text-orange-500 px-3 py-2">Blog</a>
+            {/* currently not in use  */}
+            {/* <a href="#blog" className="block hover:text-orange-500 px-3 py-2">Blog</a> */}
             <a href="#contact" className="block bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-md mt-4">Contact</a>
           </div>
         </div>
