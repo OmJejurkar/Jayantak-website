@@ -5,6 +5,8 @@ import SPPU from "./images/SPPU.jpg";
 import Rayat from "./images/Rayat.jpg";
 import Punefest from "./images/Punefest.jpg";
 import Yashwantrao from "./images/Yashwantrao.jpg";
+import { useNavigate } from 'react-router-dom';
+
 const projects = [
   {
     title: "Political Campaign 2023",
@@ -34,12 +36,21 @@ const projects = [
   {
     title: "Conference 2023",
     category: "Event Management",
-    image:
-      "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1475721027785-f74eccf877e2?auto=format&fit=crop&w=800&q=80",
   },
 ];
 
-const Project = () => {
+const ProjectComponent = () => {
+  const navigate = useNavigate();
+
+  const handleSeeAllProjects = () => {
+    // Option 1: Navigate within the application
+    navigate('/projects');
+
+    // Option 2: Open in a new tab
+    // window.open('/projects', '_blank');
+  };
+
   return (
     <section id="portfolio" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -74,18 +85,18 @@ const Project = () => {
           ))}
         </div>
 
-        {/* Move button outside grid and center it */}
+        {/* Button with onClick handler */}
         <div className="flex justify-center mt-8">
-          <a
-            href="#contact"
+          <button
+            onClick={handleSeeAllProjects}
             className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-md flex items-center gap-2"
           >
             See All Projects <ArrowRight size={20} />
-          </a>
+          </button>
         </div>
       </div>
     </section>
   );
 };
 
-export default Project;
+export default ProjectComponent;
