@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, X, } from 'lucide-react';
-import logoWBG from "./images/logoWBG.jpg";
+import logoWBG from "../images/logoWBG.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
