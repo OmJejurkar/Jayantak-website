@@ -67,7 +67,7 @@ const Why = [
     icon: <Camera className="w-8 h-8 text-orange-500" />,
     title: "Experienced Team",
     description: "A dedicated team of professionals with diverse expertise.",
-  },
+  },  
   {
     icon: <Calendar className="w-8 h-8 text-orange-500" />,
     title: "Innovative Strategies",
