@@ -1,10 +1,42 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Mail, MapPin } from 'lucide-react';
 
 const Contact = () => {
-  const handleSubmit = (e: React.FormEvent) => {
+  const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState("");
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // Handle form submission
+    setLoading(true);
+    setResult("");
+    
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    
+    // Add your Web3Forms access key
+    formData.append("access_key", "357159b9-da8e-4977-8d95-6fcf69016643");
+    
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+      
+      const data = await response.json();
+      
+      if (data.success) {
+        setResult("Thank you! Your message has been sent successfully.");
+        form.reset();
+      } else {
+        setResult("Something went wrong. Please try again.");
+        console.error("Form submission error:", data);
+      }
+    } catch (error) {
+      setResult("Failed to submit form. Please try again later.");
+      console.error("Form submission error:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -19,13 +51,26 @@ const Contact = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           <div>
+            {result && (
+              <div className={`mb-4 p-3 rounded ${result.includes("Thank you") ? "bg-green-100 text-green-700" : "bg-red-100 text-red-700"}`}>
+                {result}
+              </div>
+            )}
+            
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Hidden fields for Web3Forms */}
+              <input type="hidden" name="subject" value="New contact form submission from Jayantak website" />
+              <input type="hidden" name="from_name" value="Jayantak Website" />
+              <input type="hidden" name="to_email" value="contact.jayantak@gmail.com" />
+              
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
                 <input
                   type="text"
                   id="name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 py-3 px-4 h-12" // Added padding and height
+                  name="name"
+                  required
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 py-3 px-4 h-12"
                 />
               </div>
               <div>
@@ -33,22 +78,27 @@ const Contact = () => {
                 <input
                   type="email"
                   id="email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 py-3 px-4 h-12" // Added padding and height
+                  name="email"
+                  required
+                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500 py-3 px-4 h-12"
                 />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700">Message</label>
                 <textarea
                   id="message"
+                  name="message"
+                  required
                   rows={4}
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-purple-500 focus:ring-purple-500"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="w-full bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600"
+                disabled={loading}
+                className="w-full bg-orange-500 text-white px-6 py-3 rounded-md hover:bg-orange-600 disabled:bg-orange-300"
               >
-                Send Message
+                {loading ? "Sending..." : "Send Message"}
               </button>
             </form>
           </div>
@@ -61,14 +111,14 @@ const Contact = () => {
                   <Mail className="w-5 h-5 text-purple-600 mt-1 mr-3" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-gray-600">contact.jayantak@gmail.con</p>
+                    <p className="text-gray-600">contact.jayantak@gmail.com</p> {/* Fixed email typo */}
                   </div>
                 </div>
                 <div className="flex items-start">
                   <MapPin className="w-5 h-5 text-purple-600 mt-1 mr-3" />
                   <div>
                     <p className="font-medium">Address</p>
-                    <p className="text-gray-600">Pune<br />India</p>
+                    <p className="text-gray-600">Pune,Sambhajinagar<br />India</p>
                   </div>
                 </div>
               </div>

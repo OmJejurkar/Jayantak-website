@@ -1,4 +1,5 @@
-import React, { FC } from 'react';
+// Modified ProjectList.tsx with scroll reset on mount
+import React, { FC, useEffect } from 'react';
 import SPPU from "../images/SPPU.jpg";
 import Rayat from "../images/Rayat.jpg";
 import Punefest from "../images/Punefest.jpg";
@@ -89,6 +90,19 @@ const projectsData = [
 
 // Component to render the list of projects
 const ProjectList: FC = () => {
+    useEffect(() => {
+        // Check if we should scroll to top
+        const shouldScrollToTop = sessionStorage.getItem('scrollToTop') === 'true';
+        
+        if (shouldScrollToTop) {
+            // Reset the scroll position to the top of the page
+            window.scrollTo(0, 0);
+            
+            // Clear the flag so it doesn't affect future navigations
+            sessionStorage.removeItem('scrollToTop');
+        }
+    }, []);
+
     return (
         <div className="py-20 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
