@@ -1,3 +1,4 @@
+// Modified ProjectComponent.jsx with scroll position reset
 import React from "react";
 import { ArrowRight } from "lucide-react";
 import Y2India from "./images/Y2India.jpg";
@@ -44,11 +45,11 @@ const ProjectComponent = () => {
   const navigate = useNavigate();
 
   const handleSeeAllProjects = () => {
-    // Option 1: Navigate within the application
+    // First, store that we want to reset scroll position
+    sessionStorage.setItem('scrollToTop', 'true');
+    
+    // Then navigate to the projects page
     navigate('/projects');
-
-    // Option 2: Open in a new tab
-    // window.open('/projects', '_blank');
   };
 
   return (
@@ -85,11 +86,10 @@ const ProjectComponent = () => {
           ))}
         </div>
 
-        {/* Button with onClick handler */}
         <div className="flex justify-center mt-8">
           <button
             onClick={handleSeeAllProjects}
-            className="bg-orange-500 hover:bg-orange-600 px-8 py-3 rounded-md flex items-center gap-2"
+            className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-md flex items-center gap-2"
           >
             See All Projects <ArrowRight size={20} />
           </button>
@@ -100,3 +100,4 @@ const ProjectComponent = () => {
 };
 
 export default ProjectComponent;
+
