@@ -9,6 +9,7 @@ import {
   PenTool,
   Share2,
   Code,
+  HeartHandshake,
 } from "lucide-react";
 
 const services = [
@@ -58,27 +59,32 @@ const whyChooseUs = [
   {
     icon: <Megaphone className="w-8 h-8 text-orange-500" />, 
     title: "Holistic Approach",
-    description: "We create user-friendly, high-performing websites and e-commerce platforms that drive engagement and conversions.",
+    description: "From strategy to execution, we offer end-to-end solutions for branding, marketing, and media.",
   },
   {
     icon: <Camera className="w-8 h-8 text-orange-500" />, 
     title: "Experienced Team",
-    description: "A dedicated team of professionals with diverse expertise.",
+    description: "Our skilled professionals bring industry expertise to deliver high-quality, impactful results.",
   },  
   {
     icon: <Calendar className="w-8 h-8 text-orange-500" />, 
     title: "Innovative Strategies",
-    description: "Cutting-edge solutions to help you stay ahead of the curve.",
+    description: "We use cutting-edge tools and creative approaches to keep you ahead of the competition.",
   },
   {
     icon: <Globe className="w-8 h-8 text-purple-500" />, 
-    title: "Client-Centric",
-    description: "We prioritize your vision and goals in every project.",
+    title: "Client-Centric Focus",
+    description: "Your vision is our priority. We tailor every project to align with your goals and needs.",
   },
   {
     icon: <Briefcase className="w-8 h-8 text-purple-500" />, 
     title: "Proven Results",
-    description: "A track record of delivering impactful and measurable outcomes.",
+    description: " With a strong track record of success, we help brands, businesses, and political leaders leave a lasting impact.",
+  },
+  {
+    icon: <HeartHandshake className="w-8 h-8 text-purple-500" />, 
+    title: "Post-Project Support ",
+    description: " Our commitment doesn't end with project delivery. We provide ongoing assistance to ensure long-term success.",
   },
 ];
 
@@ -123,7 +129,7 @@ const Services = () => {
       <section id="whyChooseUs" className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Us</h2>
+            <h2 className="text-4xl font-bold mb-4">Why Choose Jayantak Media Solutions</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
