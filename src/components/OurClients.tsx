@@ -22,6 +22,7 @@ import client20 from "./images/client20.jpg";
 
 const clients = [
     { logo: client1},
+    { logo: client18},
     { logo: client2},
     { logo: client3},
     { logo: client4},
@@ -36,7 +37,6 @@ const clients = [
     { logo: client15},
     { logo: client16},
     { logo: client17},
-    { logo: client18},
     { logo: client19},
     { logo: client20},
   ];
