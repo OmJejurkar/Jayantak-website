@@ -11,6 +11,7 @@ import Blog from './components/Blog';
 import Project from './components/Pages/Project'; // Assuming Project is in pages folder
 import ServicesList from './components/Pages/ServicesList'; // Import the ServicesList component
 import JayantakChatbot from './components/chatbot'; // Import the chatbot component
+import OurClients from './components/OurClients'
 
 const App = () => {
   const [isChatOpen, setIsChatOpen] = useState(false);
@@ -27,6 +28,7 @@ const App = () => {
                 <Hero />
                 <Services />
                 <About />
+                <OurClients />
                 <ProjectComponent />
                 <Blog />
                 <Contact />

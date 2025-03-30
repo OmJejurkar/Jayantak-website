@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Award, Users, ThumbsUp, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Award, Users, ThumbsUp, Facebook, Instagram } from "lucide-react";
 import pravinImage from "./images/Pravin.jpg";
 import aniketImage from "./images/aniket.png";
 
@@ -8,16 +8,12 @@ const About = () => {
 
   const socialMediaData = {
     pravin: [
-      { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "#" },
-      { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
-      { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "#" },
-      { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" }
+      { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "https://www.facebook.com/profile.php?id=100010560255825" },
+      { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "https://www.instagram.com/pravin.shinde1804?igsh=MWNkZWlhc2VvbHp5dA==" }
     ],
     aniket: [
-      { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "#" },
-      { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
-      { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "#" },
-      { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" }
+      { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "https://www.facebook.com/aniket.mhaske.560" },
+      { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "https://www.instagram.com/aniketdmhaske1998?igsh=MWpsb2JpNDloNmZxbQ==" }
     ]
   };
 
@@ -74,7 +70,7 @@ const About = () => {
       <div className="text-center mb-12 mt-12">
         <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
-          Meet the visionaries behind Jayantak Media solutions PVT LMT. who are
+          Meet the visionaries behind Jayantak Media solutions Pvt Ltd. Who are
           driving innovation and excellence in political campaign management and
           digital solutions.
         </p>

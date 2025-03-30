@@ -49,7 +49,25 @@ const projects: Project[] = [
     folder: "yashwantrao_chavan",
     category: "Event Management",
     coverImage: yashwantrao1,
-  }
+  },
+  {
+    title: "Vivekanand Run",
+    folder: "yashwantrao_chavan",
+    category: "Marathon",
+    coverImage: yashwantrao1,
+  },
+  {
+    title: "Y20 SUMMIT",
+    folder: "yashwantrao_chavan",
+    category: "Event Management",
+    coverImage: yashwantrao1,
+  },
+  {
+    title: "Speak for India Debate Competition :  Meri Mati, Mera Desh , Lekhak Vachak Sanvad",
+    folder: "yashwantrao_chavan",
+    category: "Debate Competition",
+    coverImage: yashwantrao1,
+  },
 ];
 
 // Create a mapping of project folders to their images
