@@ -162,9 +162,9 @@ const ProjectComponent = () => {
                   />
                   <div>
                     <h3 className="text-xl font-semibold">{project.title}</h3>
-                    {project.category && (
+                    {/* {project.category && (
                       <p className="text-orange-500">{project.category}</p>
-                    )}
+                    )} */}
                   </div>
                 </div>
                 {expandedProject === project.folder ? 
