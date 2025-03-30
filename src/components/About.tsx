@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Award, Users, ThumbsUp, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Award, Users, ThumbsUp, Facebook,  Instagram } from "lucide-react";
 import pravinImage from "./images/Pravin.jpg";
 import aniketImage from "./images/aniket.png";
 
@@ -9,15 +9,11 @@ const About = () => {
   const socialMediaData = {
     pravin: [
       { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "#" },
-      { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
       { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "#" },
-      { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" }
     ],
     aniket: [
       { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "#" },
-      { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
       { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "#" },
-      { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" }
     ]
   };
 
