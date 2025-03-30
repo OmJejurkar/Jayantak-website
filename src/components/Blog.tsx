@@ -6,7 +6,7 @@ const posts = [
     title: 'The Future of Political Campaigns in the Digital Age',
     excerpt: 'Explore how digital transformation is reshaping political campaign strategies...',
     date: 'Mar 15, 2024',
-    image: 'https://images.unsplash.com/photo-1494172892981-ce47ca685ecd?auto=format&fit=crop&w=800&q=80'
+    image: 'https://media.istockphoto.com/id/171238846/photo/map-of-the-us-led-style.webp?a=1&b=1&s=612x612&w=0&k=20&c=TTZFz46Iw7nC4iSRew1Tfh1hiHrSm5bStTQ7vKRGBR4='
   },
   {
     title: 'Event Planning: From Concept to Execution',

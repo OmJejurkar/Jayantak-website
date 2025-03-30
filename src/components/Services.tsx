@@ -7,7 +7,6 @@ import {
   Globe,
   Briefcase,
   PenTool,
-  Share2,
 } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -35,17 +34,12 @@ const services = [
   {
     icon: <Briefcase className="w-8 h-8 text-purple-500" />, 
     title: "Brand Consulting",
-    description: "We offer expert consulting to help businesses craft strong and memorable brand identities.",
+    description: "We offer expert consulting to help businesses craft strong and memorable brand and identities.",
   },
   {
     icon: <PenTool className="w-8 h-8 text-purple-500" />, 
     title: "Content Writing",
     description: "We create compelling content tailored for websites, marketing campaigns, and brand storytelling.",
-  },
-  {
-    icon: <Share2 className="w-8 h-8 text-purple-500" />, 
-    title: "Social Media Handling",
-    description: "Our social media specialists help brands create, manage, and grow their presence across platforms.",
   },
 ];
 
@@ -87,8 +81,8 @@ const Services = () => {
   };
 
   return (
-    <div>
-      <section id="services" className="py-20 bg-gray-50">
+    <div className="bg-gray-50">
+      <section id="services" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-8">Our Services</h2>
           <div className="flex flex-wrap -mx-4">
@@ -111,7 +105,7 @@ const Services = () => {
         </div>
       </section>
 
-      <div className="flex justify-center mt-8 mb-8">
+      <div className="flex justify-center pb-8">
         <button
           onClick={handleSeeAllServices}
           className="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md transition duration-300"
@@ -120,7 +114,7 @@ const Services = () => {
         </button>
       </div>
 
-      <section id="whyChooseUs" className="py-20 bg-gray-50">
+      <section id="whyChooseUs" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Why Choose Us</h2>
