@@ -1,9 +1,26 @@
-import React from "react";
-import { Award, Users, ThumbsUp } from "lucide-react";
+import { useState } from "react";
+import { Award, Users, ThumbsUp, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 import pravinImage from "./images/Pravin.jpg";
 import aniketImage from "./images/aniket.png";
 
 const About = () => {
+  const [hoveredProfile, setHoveredProfile] = useState<"pravin" | "aniket" | null>(null);
+
+  const socialMediaData = {
+    pravin: [
+      { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "#" },
+      { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
+      { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "#" },
+      { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" }
+    ],
+    aniket: [
+      { name: "Facebook", icon: <Facebook className="w-5 h-5" />, url: "#" },
+      { name: "Twitter", icon: <Twitter className="w-5 h-5" />, url: "#" },
+      { name: "Instagram", icon: <Instagram className="w-5 h-5" />, url: "#" },
+      { name: "LinkedIn", icon: <Linkedin className="w-5 h-5" />, url: "#" }
+    ]
+  };
+
   return (
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +36,7 @@ const About = () => {
           <div>
             <h2 className="text-4xl font-bold mb-6">About Jayantak</h2>
             <p className="text-gray-600 mb-8">
-              With over 15 years of experience, Jayantak has been at the
+              With over 6+ years of experience, Jayantak has been at the
               forefront of political campaign management, event organization,
               and creative services. Our team of experts brings together diverse
               skills and deep industry knowledge to deliver exceptional results
@@ -46,13 +63,14 @@ const About = () => {
 
             <a
               href="#contact"
-              className="inline-block bg-purple-600 text-white px-8 py-3 rounded-md hover:bg-purple-700"
+              className="inline-block bg-purple-600 text-white px-8 py-3 rounded-md hover:bg-purple-700 transition-colors"
             >
               Work With Us
             </a>
           </div>
         </div>
       </div>
+
       <div className="text-center mb-12 mt-12">
         <h2 className="text-3xl font-bold mb-4">Our Leadership</h2>
         <p className="text-gray-600 max-w-2xl mx-auto">
@@ -64,20 +82,42 @@ const About = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-wrap -mx-4">
+          {/* Pravin Shinde Profile */}
           <div className="w-full md:w-1/2 px-4 mb-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-             {/* Image container with fixed aspect ratio */}
-             <div className="w-full mb-6">
+            <div 
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              onMouseEnter={() => setHoveredProfile("pravin")}
+              onMouseLeave={() => setHoveredProfile(null)}
+            >
+              <div className="relative overflow-hidden rounded-lg mb-6">
                 <img
                   src={pravinImage}
-                  alt="Aniket Mhaske"
-                  className="w-full h-auto object-top rounded-lg"
+                  alt="Pravin Shinde"
+                  className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
                 />
+                {hoveredProfile === "pravin" && (
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div className="bg-orange-500 px-6 py-3 rounded-full shadow-lg flex space-x-4 animate-fadeIn">
+                      {socialMediaData.pravin.map((social, index) => (
+                        <a 
+                          key={index} 
+                          href={social.url} 
+                          className="text-white hover:text-orange-200 transition-colors"
+                          aria-label={social.name}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {social.icon}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
               <h3 className="text-2xl font-bold mb-2">Pravin Shinde</h3>
               <p className="text-orange-500 mb-4">Founder</p>
               <p className="text-gray-600">
-                Pravin Shinde is a seasoned professional known for his excellent
+              Pravin Shinde is a seasoned professional known for his excellent
                 management and coordination skills. With over six years of
                 experience in media, he has a proven ability to lead teams and
                 execute projects with precision. His effective communication
@@ -88,21 +128,42 @@ const About = () => {
             </div>
           </div>
 
+          {/* Aniket Mhaske Profile */}
           <div className="w-full md:w-1/2 px-4 mb-8">
-            <div className="bg-white p-6 rounded-lg shadow-lg">
-              {/* Image container with fixed aspect ratio */}
-              <div className="w-full mb-6">
+            <div 
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+              onMouseEnter={() => setHoveredProfile("aniket")}
+              onMouseLeave={() => setHoveredProfile(null)}
+            >
+              <div className="relative overflow-hidden rounded-lg mb-6">
                 <img
                   src={aniketImage}
                   alt="Aniket Mhaske"
-                  className="w-full h-auto object-top rounded-lg"
+                  className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105"
                 />
+                {hoveredProfile === "aniket" && (
+                  <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                    <div className="bg-orange-500 px-6 py-3 rounded-full shadow-lg flex space-x-4 animate-fadeIn">
+                      {socialMediaData.aniket.map((social, index) => (
+                        <a 
+                          key={index} 
+                          href={social.url} 
+                          className="text-white hover:text-orange-200 transition-colors"
+                          aria-label={social.name}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          {social.icon}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )}
               </div>
-
               <h3 className="text-2xl font-bold mb-2">Aniket Mhaske</h3>
               <p className="text-orange-500 mb-4">Founder</p>
               <p className="text-gray-600">
-                Aniket Mhaske is the creative mastermind of Jayantak Media
+              Aniket Mhaske is the creative mastermind of Jayantak Media
                 Solutions, specializing in innovative strategies for social
                 media and digital marketing. With six years of experience, he
                 combines his creative vision with a deep understanding of the
